@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VECTOR MUSIC | Welcome</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="logo.png">
+    <style>
+      body{
+        font: 15px/1.5 Arial, Helvetica,sans-serif;
+        padding:0;
+        margin:0;
+        background-color:#f4f4f4;
+      }
+      /*golbal*/
+.container{
+    width:85%;
+    margin:auto;
+    overflow:hidden;
+  }
+  /*header*/
+  header{
+    background:#000;
+    color:#ffffff;
+    padding:12px;
+    padding-top:15px;
+    border-bottom:#e8491d 1px solid;
+  }
+
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+
+  header #ding{
+    float:left;
+    color:#ff6600;
+    font-weight:bold;
+  }
+
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+
+  .highlight, .current a{
+    color:#ff6600;
+    font-weight:bold;
+  }
+
+  header a:hover{
+    color:#cccccc;
+    font-weight:bolder;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+  height: 50px;
+  width: 50px;
+}
+.highlight li{
+  color:#ff6600;
+
+}
+  /*footer*/
+  footer{
+    padding: 1px;  
+    color:#ffffff;
+    background-color:#000;
+    text-align: center;
+    border-top:#e8491d 1px solid;
+  }
+
+
+  #main-col{
+        float:left;
+        width:60%;
+        margin-top:20px;
+        padding-left:30px;
+      }
+      #main-col h1{
+        font-size:20px ;
+      }
+
+      #sidebar{
+        float:right;
+        width:35%;
+        margin-top:30px;
+      }
+      .dark{
+        padding-left:30px;
+        padding-top: 15px ;
+        padding-bottom: 20px;
+        padding-right: 35px;
+        background:#000;
+        color:#ffffff;
+        margin-top:10px;
+        margin-bottom:10px;
+      }
+      .dark strong{
+        text-decoration:underline;
+      }
+
+
+      
+  .slider {
+            width: 50%;
+            height:50%
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+
+#slider{
+    width: 85%;
+    max-width: 50%;
+    
+}
+
+@media (max-width: 600px) {
+    header{
+    padding:10px;
+  }
+
+  header a{
+    font-size:14px;
+  }
+
+  header li{
+    padding: 0 10px 0 15px;
+  }
+  /*footer*/
+  footer{
+    font-size:12px;
+
+  }
+  #sidebar{
+    float:inline-start;
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+  }
+
+  /* Styles for small screens */
+}
+
+
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="ding">
+          <span class="highlight"><a href="index.html"><li class="brand"><img src="logo.png" alt="VECTOR MUSIC"> VECTOR MUSIC</li></a></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            
+            <li><a href="all.html">Music</a></li>
+            <li><a href="allvideo.html">Videos</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1>About VECTOR MUSIC</h1>
+          <p>
+            Welcome to VECTOR MUSIC, where every note resonates, and every beat pulses with creativity. 
+             Our passion lies in curating a musical journey that transcends boundaries and connects hearts.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <p>Feel the heartbeat of music at VECTOR MUSIC. 🎵✨ 
+              Join us on this sonic adventure, and let’s write melodies that resonate forever.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container">
+    <div id="slider">
+      <div class="slider">
+          <div class="slides">
+              <img src="img/eng.jpg" alt="Image 1" class="slide">
+              <img src="img/bg1.jpg" alt="Image 2" class="slide">
+              <img src="img/eng.jpg" alt="Image 3" class="slide">
+              <img src="img/ba.jpg" alt="Image 1" class="slide">
+              <img src="img/en.jpg" alt="Image 2" class="slide">
+              <img src="img/he.jpg" alt="Image 3" class="slide">
+              <!-- Add more images as needed -->
+          </div>
+      </div>
+  
+      <script>
+          let index = 0;
+  
+          function moveSlides() {
+              const slides = document.querySelector('.slides');
+              index = (index + 1) % slides.children.length; // Cycle back to the first image
+              const newTransformValue = -index * 100;
+              slides.style.transform = `translateX(${newTransformValue}%)`;
+          }
+  
+          setInterval(moveSlides, 2000); // Change image every 2 seconds
+      </script>
+  </div>
+</section>
+
+    <section>
+      <div class="container"    >
+          <div class="dark">
+            <h3>Here’s what makes us unique:</h3>
+            <P><strong>Exclusive Tracks:</strong> Discove a treasure trove of exclusive tracks from emerging songwriters. 
+              We believe that music is more than just sound—it’s an emotion, a story waiting to be told. 
+              Dive into melodies that move you, lyrics that inspire, and rhythms that linger long after the song ends.</P>
+
+              <p><strong>Curated Playlists:</strong> Our playlists are carefully crafted to match your every mood. 
+                Whether you’re feeling upbeat, introspective, or ready to dance, we’ve got a playlist for you. 
+                From sunrise to sunset, let the music guide your day.
+              </p>
+
+              <p><strong>Immersive Audio Experiences:</strong> Close your eyes, and let the music envelop you. 
+                Our high-quality audio streams transport you to the heart of the studio, where artists pour their souls into each note. 
+                Feel the warmth of analog recordings and the precision of digital mastering.</p>
+            
+                <p><strong>The Future of Sound:</strong> We’re not just about today’s hits; we’re about tomorrow’s breakthroughs. 
+                  VECTOR MUSIC is where innovation meets melody. 
+                  Be the first to hear the next big hit, the hidden gem that will define a generation.</p>
+            
+          </div>
+      </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 VECTOR MUSIC All rights reserved.</p>
+        <p>DESIGN BY STUDENTS OF CS BRANCH (4th sem ) {AYUSH SINGH , NIRAJ SHAH , LOVELY RAJ , SARIKA}</p>
+      </footer>
+    </body>
+  </html>
+  
