@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VECTOR MUSIC | Welcome</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="logo.png">
+    <style>
+      body{
+        font: 15px/1.5 Arial, Helvetica,sans-serif;
+        padding:0;
+        margin:0;
+        background:url('img/bg1.jpg') no-repeat center center/cover;
+        background-position: center;
+        background-size: cover;
+      }
+      /*golbal*/
+.container{
+    width:85%;
+    margin:auto;
+    overflow:hidden;
+  }
+  /*header*/
+  header{
+    background:#000;/*#35424a*/
+    color:#ffffff;
+    padding:12px;
+    padding-top:15px;
+    border-bottom:#e8491d 1px solid;
+  }
+
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+
+  header #ding{
+    float:left;
+    color:#ff6600;
+    font-weight:bold;
+  }
+
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+
+  .highlight, .current a{
+    color:#ff6600;
+    font-weight:bold;
+  }
+
+  header a:hover{
+    color:#cccccc;
+    font-weight:bolder;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+  height: 50px;
+  width: 50px;
+}
+.highlight li{
+  color:#ff6600;
+
+}
+  /*footer*/
+  footer{
+    padding: 1px;  
+    color:#ffffff;
+    background-color:#000;
+    text-align: center;
+    border-top:#e8491d 1px solid;
+  }
+
+      /* Showcase */
+      .showcase{
+        min-height:480px;
+        max-height: 550px;
+        text-align:center;
+        color:#ff6600;
+      }
+
+      .showcase h1{
+        margin-top:80px;
+        font-size:40px;
+        margin-bottom:10px;
+      }
+      .showcase h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .showcase p{
+        font-size:18px;
+      }
+      .sign{
+    background-color:white;/*rgb(232, 196, 50)*/
+    border-color: #ff6600;
+    border-radius: 5px;
+    color: #000000;
+    font-weight:bold ;
+    text-decoration:none;
+    font-size:17px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+  .sign:hover{
+    color:#e8491d
+  }
+
+  @media (max-width: 600px) {
+    header{
+    padding:10px;
+  }
+
+  header a{
+    font-size:14px;
+  }
+
+  header li{
+    padding: 0 10px 0 15px;
+  }
+  /*footer*/
+  footer{
+    font-size:12px;
+
+  }
+  .showcase h1{
+    font-size:30px;
+  }
+  .showcase h2 {
+    font-size: 25px;
+  }
+
+
+  /* Styles for small screens */
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="ding">
+          <span class="highlight"><a href="index.html"><li class="brand"><img src="logo.png" alt="VECTOR MUSIC"> VECTOR MUSIC</li></a></span>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="all.html">Music</a></li>
+            <li><a href="allvideo.html">Videos</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="showcase">
+        <h1>VECTOR MUSIC</h1>
+        <h2>Feel the heart beats with vector music playlist  </h2>
+        <p>Discover the Future of Music: Dive into exclusive tracks from rising songwriters, curated playlists for every mood, and immersive audio experiences. Join our community and be the first to hear the next big hit!"
+        </p>
+        <button class="sign" onclick="document.location.href='all.html'">Music</button>
+        <button class="sign" onclick="document.location.href='allvideo.html'">Videos</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 VECTOR MUSIC All rights reserved.</p>
+      <p>DESIGN BY STUDENTS OF CS BRANCH (4th sem ) {AYUSH SINGH , NIRAJ SHAH , LOVELY RAJ , SARIKA}</p>
+    </footer>
+  </body>
+</html>
